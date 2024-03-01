@@ -1,0 +1,14 @@
+<div class="container">
+    <ul>
+        @for(item of arrayComponents(); track item){
+            <li>
+                <div>
+                    <img [src]="item.src" [alt]="item.alt" loading="lazy" width="240px" height="130px">
+                </div>
+                <div><a [href]="item.href">Acessar</a></div>
+            </li>
+    
+        }
+    </ul>
+</div>
+

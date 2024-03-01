@@ -1,0 +1,16 @@
+<app-header />
+<main>
+    <app-cards />
+  
+    @defer (on viewport) {
+    <app-sessoes />
+    }@placeholder {
+    <section>
+        <h2>Carregando as atas das sessões</h2>
+    </section>
+    }@error {
+    <section>
+        <h2>Ocorreu um erro ao carregar as atas das sessões</h2>
+    </section>}
+
+</main>

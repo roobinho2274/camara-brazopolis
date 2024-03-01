@@ -1,0 +1,11 @@
+@for(item of menuItens(); track item){
+<button mat-button [matMenuTriggerFor]="belowMenu">{{item.nameItem}}</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+    @for(subItem of item.subItem;track subItem)
+    {
+    <button mat-menu-item>{{subItem}}</button>
+    }@empty {
+
+    }
+</mat-menu>
+}
