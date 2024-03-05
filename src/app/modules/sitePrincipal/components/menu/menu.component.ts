@@ -1,7 +1,6 @@
 import { Component, signal } from '@angular/core';
-import { MatMenuModule } from '@angular/material/menu';
-import { MatButtonModule } from '@angular/material/button';
 import { CommonModule } from '@angular/common';
+import { RouterLink, RouterLinkActive } from '@angular/router';
 
 /**
  * @title Menu positioning
@@ -10,26 +9,31 @@ import { CommonModule } from '@angular/common';
   selector: 'menu-position-example',
   templateUrl: 'menu.component.html',
   standalone: true,
-  imports: [MatButtonModule, MatMenuModule, CommonModule],
+  styleUrl: './menu.component.scss',
+  imports: [CommonModule, RouterLink, RouterLinkActive],
 })
 export class MenuPositionExample {
 
   public menuItens = signal([
     {
-      nameItem: 'Histórico',
-      subItem: [],
+      nameItem: 'História',
+      route: '/historia'
     },
     {
       nameItem: 'Notícias',
-      subItem: [],
+      route: '/noticias'
     },
     {
       nameItem: 'Vereadores',
-      subItem: [{}],
+      route:'/vereadores'
     },
     {
       nameItem: 'Licitações',
-      subItem: [],
+      route: '/licitacoes'
+    },
+    {
+      nameItem: 'Arquivos',
+      route: '/arquivos'
     },
 
   ]);

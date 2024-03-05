@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
-  selector: 'app-vereadores',
+  selector: 'app-noticias',
   standalone: true,
   imports: [],
-  templateUrl: './vereadores.component.html',
-  styleUrl: './vereadores.component.scss',
+  templateUrl: './noticias.component.html',
+  styleUrl: './noticias.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export default class VereadoresComponent {
+export default class NoticiasComponent {
 
 }

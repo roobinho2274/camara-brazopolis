@@ -7,9 +7,19 @@ export const pageRoutes: Routes = [
         loadComponent: () => import('./home/home.component'),
     },
     {
+        path: 'noticias',
+        title: 'Noticias',
+        loadComponent: () => import('./noticias/noticias.component'),
+    },
+    {
         path: 'historia',
         title: 'História da Câmara',
         loadComponent: () => import('./historia/historia.component'),
+    },
+    {
+        path: 'vereadores',
+        title: 'Os vereadores',
+        loadComponent: () => import('./vereadores/vereadores.component'),
     },
     {
         path: 'licitacoes',

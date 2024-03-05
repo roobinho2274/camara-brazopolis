@@ -1,0 +1,13 @@
+:host {
+    .main_menu {
+        display: flex;
+        flex-basis: auto;
+        justify-content: flex-end;
+
+        a {
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+    }
+}
